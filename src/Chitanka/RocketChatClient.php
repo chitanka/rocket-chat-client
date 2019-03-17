@@ -19,7 +19,7 @@ class RocketChatClient {
 	}
 
 	public function canPost() {
-		return $this->chatUrl && $this->authToken && $this->userId;
+		return $this->chatUrl && $this->username && $this->password;
 	}
 
 	public function changeUrlScheme($newScheme) {
